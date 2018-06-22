@@ -1,0 +1,61 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:es": "ES=1 node scripts/build.js",
+    "build:umd:clean": "rm -rf packages/dva/dist",
+    "build:umd": "node scripts/umd.js",
+    "build:umd:production": "NODE_ENV=production node scripts/umd.js",
+    "changelog": "lerna-changelog",
+    "test": "umi-test --coverage",
+    "debug": "umi-test",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "lint": "eslint --ext .js packages",
+    "precommit": "lint-staged",
+    "publish": "./scripts/publish.js",
+    "bootstrap": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.51",
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "@babel/preset-react": "^7.0.0-beta.51",
+    "@babel/preset-stage-0": "^7.0.0-beta.51",
+    "@babel/runtime": "^7.0.0-beta.51",
+    "babel-eslint": "^8.2.3",
+    "chalk": "^2.4.1",
+    "coveralls": "^3.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
+    "expect": "^23.1.0",
+    "husky": "^0.14.3",
+    "lerna": "^2.11.0",
+    "lerna-changelog": "^0.8.0",
+    "lint-staged": "^7.2.0",
+    "now": "^11.2.4",
+    "prettier": "^1.13.5",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.61.1",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-uglify": "^4.0.0",
+    "shelljs": "^0.8.2",
+    "through2": "^2.0.3",
+    "uglify-js": "^3.4.1",
+    "umi-test": "^0.5.5",
+    "vinyl-fs": "^3.0.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --trailing-comma es5 --single-quote --write",
+      "git add"
+    ]
+  }
+}
