@@ -27,13 +27,15 @@ const browserBabelConfig = {
     [
       require.resolve('@babel/preset-env'),
       {
-        browsers: [
-          'Chrome >= 35',
-          'Firefox >= 38',
-          'Edge >= 12',
-          'not ie < 9',
-          'Safari >= 8',
-        ],
+        targets: {
+          browsers: [
+            'Chrome >= 35',
+            'Firefox >= 38',
+            'Edge >= 12',
+            'not ie < 9',
+            'Safari >= 8',
+          ],
+        },
         modules: process.env.ES ? false : 'commonjs',
       },
     ],
