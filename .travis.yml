@@ -15,6 +15,7 @@ after_success:
 cache:
   directories:
     - node_modules
+    - packages/creditjs/node_modules
 
 git:
   depth: 5
