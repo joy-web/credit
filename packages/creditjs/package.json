@@ -1,0 +1,36 @@
+{
+  "name": "creditjs",
+  "version": "0.0.1",
+  "description": "A collection of utility libraries used by Credit JS projects.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joy-web/credit"
+  },
+  "homepage": "https://github.com/joy-web/credit",
+  "keywords": [
+    "credit",
+    "jd",
+    "framework",
+    "frontend"
+  ],
+  "authors": [
+    "tedyhy <yaohaiyang@jd.com> (https://github.com/tedyhy)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joy-web/credit/issues"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.51",
+    "flatten": "^1.0.2",
+    "global": "^4.3.2",
+    "invariant": "^2.2.4",
+    "is-plain-object": "^2.0.4",
+    "warning": "^4.0.1"
+  },
+  "files": [
+    "lib",
+    "src",
+    "index.js"
+  ]
+}
