@@ -7,7 +7,7 @@ import {
   returnSelf,
 } from '../src/utils';
 
-describe('checkUtils', () => {
+describe('checkUtils.test.js', () => {
   it('null should not be plain object', () => {
     expect(isPlainObject(null)).toEqual(false);
   });

@@ -7,7 +7,7 @@
     "test": "umi-test --coverage",
     "debug": "umi-test",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "lint": "eslint --ext .js packages",
+    "lint": "eslint --ext .js packages --fix",
     "precommit": "lint-staged",
     "publish": "./scripts/publish.js",
     "bootstrap": "lerna bootstrap"
